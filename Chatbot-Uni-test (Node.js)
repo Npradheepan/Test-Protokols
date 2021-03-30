@@ -1,0 +1,29 @@
+// @te-check;
+const { ConverssationState, MemoryStore, TestAdopter } = require("botblder");
+const { DialogSet, ddial } = require("botbuilder-dialogs");
+const { EmailPrompt } = require("../lib/email");
+
+describe("Email dialog prompt test ", function () {
+  this.timeout(5000);
+  it("should call EmailPrompt when user initiatives conversation", async () => {
+    const ConverssationState = new ConverssationState(new MemoryStore());
+    const dialogState = ConverssationState.CreateProperty("dialogState");
+    const dialogs = new DialogSet("dialogState");
+    dialog.add(new EmailPrompt("prompt"));
+    const adapter = newTestAdapter(async (context) => {
+      const dc = await dialogs.createContext(context);
+      const results = await dc.continueDialog();
+      if (results.status === DialogTurnSatus.empty) {
+        await dc.prompt("prompt", "was ist Ihre Emil adresse?");
+      } else if (results.status === DialogTurnSatus.complete) {
+        const replay = results.results.toString();
+        await context.sentactivity(replay);
+
+      }
+    });
+    await adapter.test(" Sagen", "Sie Ihre Email adress?")
+      .send("Mein Email Adrress pradheepanger@gmail.com")
+      .assertReplay("pradheepanger@gmail.com");
+
+  });
+});
