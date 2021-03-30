@@ -1,0 +1,56 @@
+C:\Users\pradheepan\botbulder-community.js ls
+Directory :C:\Users\pradheepan\botbulder-community.js
+
+Module           LastwriteTime         length Name
+-----            -------------         -----------
+--d--          28/3/2021 01.54AM        .Vs Code
+--d--          22/3/2021 11.22AM        Libraries
+--d--          27/3/2021 17.13PM        node_Modules
+--a--          21/3/2021 04.20AM      497 .editercinfig
+--a--          28/3/2021 13.15PM      992 .gitignore
+--a--          26/3/2021 00.44AM      557 .CODEOWNERS
+--a--          25/3/2021 10.35AM      339 Lerna .json
+--a--          22/3/2021 03.17AM      1099 Licensed
+--a--          26/3/2021 06.31AM      225220 packet-locked json
+--a--          24/3/2021 20.24PM      284  package.json
+--a--          24/3/2021 09.14AM      3051 README.Md
+
+C:\Users\pradheepan\botbulder-community.js> cd .\libraries\
+Directory :C:\Users\pradheepan\botbulder-community.js> ls
+
+Directory :C:\Users\pradheepan\botbulder-community.js>.\libraries\
+
+Module           LastwriteTime         length Name
+-----            -------------         -----------
+--d--          28/3/2021 01.54AM       botbulder-adapters
+--d--          28/3/2021 02.14AM       botbulder-dialog-propts
+--d--          28/3/2021 02.22AM       botbulder-spell-check-middleware
+--d--          28/3/2021 02.30AM       botbulder-storage
+--d--          28/3/2021 02.35AM       botbulder-text-analytics-middleware
+--d--          28/3/2021 02.38AM       botbulder-text-recognizer-middleware
+
+C:\Users\pradheepan\botbulder-community.js> cd .\libraries\
+Directory :C:\Users\pradheepan\botbulder-community.js> ls
+
+Directory :C:\Users\pradheepan\botbulder-community.js>.\libraries\botbulder-doialog-prompts
+
+Module           LastwriteTime         length Name
+-----            -------------         -----------
+--d--          28/3/2021 02.40AM       example
+--d--          22/3/2021 02.50AM       lib
+--d--          24/3/2021 03.52AM       node_Modules
+--d--          23/3/2021 12.54PM       src
+-a--           21/3/2021 02.55AM       test
+-a--           22/3/2021 02.40AM       983 .gitignore
+-a--           27/3/2021 02.50AM       36816 packet-locked json
+-a--           28/3/2021 02.52AM       1338  package.json
+-a--           26/3/2021 02.54PM       1965 README.Md
+-a--           28/3/2021 02.55AM       248 tsconfig.json
+
+Directory :C:\Users\pradheepan\botbulder-community.js>.\libraries\botbulder-doialog-prompts> mocha
+
+Email dialog prompt tests
+should call EmailPromt Whenn user initiates conversation.:
+Error:Timeout of 5000s execeeded. for async tests and books,ensure "done()" is called; if (returning a Promise, ensure it resolves.)
+(C:\Users\pradheepan\botbulder-community.js>.\libraries\botbulder-doialog-prompts\testindex.tests.js)
+
